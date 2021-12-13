@@ -2,19 +2,20 @@ package core.nmvc;
 
 import java.util.Map;
 
+import core.di.BeanScanner;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ControllerScannerTest {
-    private static final Logger logger = LoggerFactory.getLogger(ControllerScannerTest.class);
+public class BeanScannerTest {
+    private static final Logger logger = LoggerFactory.getLogger(BeanScannerTest.class);
 
-    private ControllerScanner cf;
+    private BeanScanner cf;
 
     @Before
     public void setup() {
-        cf = new ControllerScanner("core.nmvc");
+        cf = new BeanScanner("core.nmvc");
     }
 
     @Test
